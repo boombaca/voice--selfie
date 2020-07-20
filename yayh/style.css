@@ -7,9 +7,9 @@ body{
   } 
   #camera
   {
-      width:360px;
+      width:340px;
       height: 250px;
-      background-color: black;
+      background-color: white;
       border-radius: 10px;
   }
   #result
