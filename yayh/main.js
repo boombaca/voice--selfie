@@ -27,7 +27,7 @@ var Content = event.results[0][0].transcript;
 function speak(){
     var synth = window.speechSynthesis;
 
-    speak_data = "Taking your Selfie in 10 seconds 10...9...8...7...6...5...4...3...2...1";
+    speak_data = "Taking your Selfie in 10 seconds 10...9...8...7...6...5...4...3...2...1 cachak";
 
     
 
@@ -40,7 +40,7 @@ function speak(){
     setTimeout(function()
     { 
         take_snapshot(); 
-        save();
+        
     }, 10000);
 }
 
@@ -67,4 +67,10 @@ function save()
   image = document.getElementById("selfie_image").src ;
   link.href = image;
   link.click();
+  
+}
+
+function off()
+{
+location.reload();
 }
